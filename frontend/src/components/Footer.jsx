@@ -1,11 +1,11 @@
 import React from 'react';
-import { Heart, ShieldCheck, Github, ExternalLink } from 'lucide-react';
+import { Heart, ShieldCheck } from 'lucide-react';
 
 export default function Footer({ onNavigate }) {
   return (
     <footer className="glass-panel" style={{ padding: '2rem', marginTop: '3rem', borderTop: '1px solid var(--border-color)' }}>
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: '2rem', marginBottom: '2rem' }}>
-        
+
         {/* Brand Info */}
         <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
@@ -17,7 +17,7 @@ export default function Footer({ onNavigate }) {
           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', lineHeight: 1.6 }}>
             Next-generation cardiovascular health risk prediction engine. Combining clinical outlier preprocessing with Logistic Regression machine learning.
           </p>
-        </div> 
+        </div>
 
         {/* Quick Links */}
         <div>
