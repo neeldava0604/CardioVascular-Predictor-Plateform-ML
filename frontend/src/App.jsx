@@ -8,7 +8,7 @@ import DatasetPage from './pages/DatasetPage';
 import ModelPage from './pages/ModelPage';
 import FaqPage from './pages/FaqPage';
 
-const API_BASE_URL = 'http://127.0.0.1:8000';
+const API_BASE_URL = import.meta.env.PROD ? '' : 'http://127.0.0.1:8000';
 
 const DEFAULT_FORM_DATA = {
   age: 52,
