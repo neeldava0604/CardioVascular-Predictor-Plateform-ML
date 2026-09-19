@@ -27,9 +27,10 @@ PIPELINE_META = None
 
 def load_artifacts():
     global MODEL, SCALER, PIPELINE_META
-    pipeline_path = "cardio_pipeline.pkl"
-    model_path = "cardio_model.pkl"
-    scaler_path = "cardio_scaler.pkl"
+    base_dir = os.path.dirname(os.path.abspath(__file__))
+    pipeline_path = os.path.join(base_dir, "cardio_pipeline.pkl")
+    model_path = os.path.join(base_dir, "cardio_model.pkl")
+    scaler_path = os.path.join(base_dir, "cardio_scaler.pkl")
 
     if os.path.exists(pipeline_path):
         meta = joblib.load(pipeline_path)
